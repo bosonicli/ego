@@ -1,0 +1,76 @@
+% !TeX root = Newton.tex
+
+\section{\label{sec:Scenario}Scenarios}
+
+\subsection{\label{sec:Wander}Wander around space station}
+
+	Space station $O$ is orbiting $\vec{r}:(r,\theta)$ around the earth and an astronaut is wandering around $O$ with displacement $\vec{\Delta r}$ in non-rotating system and $\vec{\delta r}$ in rorating system.
+
+	Dynamic in the rotating system is described in Eqn.~\ref{eqn:a_Wander}
+
+	\bea
+		{\vec{a}}_{\delta} &=& \vec{a}_{Tide} + \vec{a}_{c} + \vec{a}_{\beta}	\nn	\\
+		\vec{a}_{Tide} &=& - \frac{k}{r_0^3} (- 2 \delta r_{r} \hat{r} + \delta r_{\theta} \hat{\theta} )	\nn	\\
+		\vec{a}_{c} &=& 2 \dot{\theta} (\dot{\delta r_{\theta}} \hat{r} - \dot{\delta r_{r}} \hat{\theta} )	\nn	\\
+		\vec{a}_{\beta} &=& \ddot{\theta} (\delta r_{\theta} \hat{r} - \delta r_{r} \hat{\theta} ) 	\label{eqn:a_Wander}
+	\eea
+
+	Assume $O$ is orbiting on a circle $(\dot{\theta}, \ddot{\theta}) = (\omega,0)$, we have $\omega = \frac{k}{r_0^3}$, then Eqn.~\ref{eqn:a_Wander} is simplified as Eqn.~\ref{eqn:a_Wander_Circle}
+
+	\bea
+		\frac{d^2}{dt^2} \vec{\delta r} &=& \vec{a}_{Tide} + \vec{a}_{c}	\nn	\\
+		&=& -\omega^2 (- 2 \delta r_{r} \hat{r} + \delta r_{\theta} \hat{\theta} ) + 2 \omega (\dot{\delta r_{\theta}} \hat{r} - \dot{\delta r_{r}} \hat{\theta} )	\label{eqn:a_Wander_Circle}
+	\eea
+
+	Qualitative analysis of the dynamics: Assume the astronaut orbits around the space station with $\dot{\delta \theta} < 0$ and a period same as the space station orbit $T_0$
+
+	\begin{itemize}
+		\item
+		Averagely, orbit of $\vec{\delta r}$ operates with $\vec{-\omega}$;
+		\item
+		At vertex along the $\hat{r}$ direction, $\vec{a}_{Tide}$ points outwards, so velocity should be large to generate massive $\vec{a}_{c}$;
+		\item
+		At vertex along the $\hat{\theta}$ direction, $\vec{a}_{Tide}$ points inwards, enough to keep the orbit bound, so velocity should be small;
+		\item
+		Quantitave description of the orbit dynamic remains mystery;
+	\end{itemize}
+
+\subsection{\label{sec:DysonSphere}Effective gravity induced by rotation of facility}
+
+	Only second-order effect is present at a perturbative level.
+
+\subsection{\label{sec:Lagrangian}Lagrangian points}
+
+	We consider the effective dynamics in a Non-inertial system of two-body gravity system.
+
+	Consider a two-body system consists of two celestial bodies $M_1$ and $M_2$ with distance of $D$. The two-body effective mass and orbiting angular velocity are
+
+	\bea
+		M &=& \frac{M_1 M_2}{M_1+M_2}	\nn	\\
+		\frac{G M_1 M_2}{D^2} &=& \frac{M_1 M_2} \omega^2 D	\nn	\\
+		\omega^2 &=& \frac{G (M_1 + M_2)}{D^3}
+	\eea
+
+	The two celestial bodies are orbiting around the centroid $O$. Now we consider the Lagrangian point $L_4$ locating at the vertex of an equilateral triangle connecting $M_1$ and $M_2$, thus we have $\vec{r} = \frac{M_1 \vec{r_1} + M_2 \vec{r_2}}{M_1 + M_2}$
+
+	In the rotating celestial system, the effective potential around $L_4$ is
+
+	\bea
+		V_{eff} &=& V_0(\vec{r_1}) + V_1(\vec{r_1}) + V_2(\vec{r_1}) + V_0(\vec{r_2}) + V_1(\vec{r_2}) + V_2(\vec{r_2}) + o((\vec{\Delta r})^3) + V_{\omega}	\nn	\\
+		&=& V_{eff}^{0} + V_{eff}^{1} + V_{eff}^{2} + o((\vec{\Delta r})^3)	\nn	\\
+		V_{\omega} &=& -\frac{1}{2} \omega^2 (\vec{r} + \vec{\Delta r})^2 \nn	\\
+		V_{eff}^{1} &=& -\frac{G M_1}{D} (-\frac{\vec{r_1} \cdot \vec{\Delta r}}{\norm{\vec{r_1}}^2})  -\frac{G M_2}{D} (-\frac{\vec{r_2} \cdot \vec{\Delta r}}{\norm{\vec{r_2}}^2}) - \omega^2 \vec{r} \cdot \vec{\Delta r}	\nn	\\
+		&=& \frac{G}{D^3} (M_1 \vec{r_1} + M_2 \vec{r_2}) \cdot \vec{\Delta r} - \frac{G}{D^3} (M_1 \vec{r_1} + M_2 \vec{r_2}) \cdot \vec{\Delta r}	\nn	\\
+		&=& 0	\nn	\\
+		V_{eff} &=& V_{eff}^{0} + V_{eff}^{2} + o((\vec{\Delta r})^3)	\label{eqn:V_L4}
+	\eea
+
+	In fact $V_{eff}^2$ is convex around $L_4$, thus $L_4$ is a smooth maximum in the rotating system. Celestial bodies around $L_4$ are bounded by Coriolis force under certain condition (the mass ratio boundary $\frac{M_1}{M_2}$ actually)
+
+\subsection{\label{sec:Epicycle}Epicycle model}
+
+	Fitting Kepler orbit of binary star system to epicycle system?
+
+\subsection{\label{sec:Channel}Space channel in gravitational fields}
+
+	More fictional rather than a realistic one. Few materials are found.

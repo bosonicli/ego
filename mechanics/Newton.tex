@@ -1,0 +1,168 @@
+\documentclass[aps,preprint,amsmath,amssymb,nofootinbib,superscriptaddress,floatfix]{revtex4-1}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{subfigure}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{euscript}
+%\usepackage{ulem}
+\usepackage{color}
+\usepackage{epsfig,psfrag,subfigure}
+\usepackage{amsfonts}
+\usepackage{exscale}
+\usepackage{amsbsy}
+\usepackage{placeins}
+\usepackage{CJK}
+%\usepackage{ulem}
+%\usepackage{babel}
+%\usepackage{times.sty}
+
+\def\avg#1{\left\langle#1\right\rangle}
+\def\bra#1{\left\langle#1\right|}
+\def\ket#1{\left|#1\right\rangle}
+\def\braket#1#2{\left\langle #1\right|\left.#2\right\rangle}
+\def\combin#1#2{\kc{^{#1}_{#2}}}
+\def\abs#1{\left|#1\right|}
+\def\kc#1{\left(#1\right)}
+\def\kd#1{\left[#1\right]}
+\def\ke#1{\left\{#1\right\}}
+\def\Re{{\rm Re}}
+\def\Im{{\rm Im}}
+\def\sgn{{\rm sgn}}
+\def\mode{\text{ }{\rm mod}\text{ }}
+\def\trace#1{{\rm Tr}\left[#1\right]}
+\def\Det#1{{\rm Det}\left(#1\right)}
+\def\be{\begin{equation}}       \def\ee{\end{equation}}
+\def\bea{\begin{eqnarray}}      \def\eea{\end{eqnarray}}
+\def\ba{\begin{array}}
+\def\ea{\end{array}}
+\def\bnum{\begin{enumerate} }
+\def\enum{\end{enumerate}}
+\def\lf{\left}
+\def\rt{ \right}
+\def\nn{\nonumber}
+\def\pa{\partial}
+\def\=>{\Rightarrow}
+\def\>{\rightarrow}
+\def\A{\uparrow}
+\def\V{\downarrow}
+\def\PRB{Phys. Rev. B}
+\def\PRL{Phys. Rev. Lett.}
+\def\eye2{Fathbb{I}}
+\def\vk{{\bf k}}
+\def\Tau{Fathcal{T}}
+\def\Ep{Fathcal{E}}
+\def\Kp{Fathcal{K}}
+\def\intz{Fathbb{Z}}
+\def\vect#1{\kc{\ba{c}#1\ea}}
+\def\elist#1{\left\{\ba{cc} #1\ea\right.}
+\def\Cl{{\rm Cliff}}
+\def\Pf#1{{\rm Pf}\kc{#1}}
+\def\m{\textrm{matter}}
+\def\g{\textrm{gauge}}
+
+\def\Eq#1{Eq.~(\ref{#1})}
+\def\Fig#1{Fig.~\ref{#1}}
+
+\def\te{\mathrm{e}}
+\def\eff{\mathrm{eff}}
+\def\tr{\mathrm{tr}}
+\def\Tr{\mathrm{Tr}}
+\def\bS{{\bf S}}
+\def\tS{{\tilde S}}
+\def\tP{{\tilde P}}
+
+\renewcommand{\v}[1]{{\bf #1}}
+\renewcommand{\c}[1]{{\cal #1}}
+\renewcommand{\b}[1]{{\bar{ #1}}}
+\newcommand{\w}{{\omega}}
+\newcommand{\s}{{\sigma}}
+\newcommand{\bz}{\bar{z}}
+\newcommand{\gr}{{\nabla}}
+%\newcommand{\Ref}[1]{Ref.~\cite{#1}}
+\newcommand{\no}{\nonumber}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\Im}{{\rm Im}}
+\renewcommand{\Re}{{\rm Re}}
+\newcommand{\p}{\partial}
+\renewcommand{\t}[1]{{\tilde #1}}
+\newcommand{\ua}{\uparrow}
+\newcommand{\da}{\downarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\leftrightarrow}
+\newcommand{\del}{\delta}
+\newcommand{\Del}{\Delta}
+\newcommand{\e}{\epsilon}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\ka}{\kappa}
+\newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda}
+\newcommand{\Om}{\Omega}
+\renewcommand{\th}{\theta}
+\newcommand{\Th}{\Theta}
+\newcommand{\Si}{\Sigma}
+
+\newcommand {\C}{\textcolor {red}}
+\newcommand {\B}{\textcolor {blue}}
+
+\newcommand{\rem}[1]{\sout{\textcolor{magenta}{#1}}}
+\newcommand{\rep}[2]{\sout{\textcolor{magenta}{#1}}\ \textcolor{blue}{#2}}
+\newcommand{\ins}[1]{\textcolor{blue}{#1}}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\usepackage{braket}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+
+\newcommand{\norm}[1]{\vert #1 \vert}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+
+
+%\bibliographystyle{apsrev4-1}
+\begin{document}
+
+%\preprint{APS/123-QED}
+\graphicspath{{../../diagram_repository/}}
+\title{Extended-Kitaev $J_2-J_3$ model}
+\author{Bo-Hai Li}
+
+%\maketitle
+
+\appendix
+\renewcommand\thefigure{\Alph{section}\arabic{figure}}
+\renewcommand\theequation{\Alph{section}\arabic{equation}}
+\renewcommand\thetable{\Alph{section}\arabic{table}}
+
+\tableofcontents
+
+\input{chap_Kepler}
+
+\input{chap_Mechanics}
+
+\input{chap_NonInertial}
+
+\input{chap_Thermal}
+
+\input{chap_Scenario}
+
+\bibliography{../../ref_repository/EndNote_Bohai_2021Sep}
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******

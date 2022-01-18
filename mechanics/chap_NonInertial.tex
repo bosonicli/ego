@@ -1,0 +1,45 @@
+% !TeX root = Newton.tex
+
+\section{\label{sec:NonInertial}Non-inertial system}
+
+\subsection{\label{sec:Tide}Tidal Force}
+
+	\bea
+		(1+x)^{-\frac{1}{2}} &=& 1 + (-\frac{1}{2} ) x + (\frac{3}{8}) x^2 + o(x^3)	\label{eqn:Taylor_M12}	\\
+		(1+x)^{-\frac{3}{2}} &=& 1 + (-\frac{3}{2} ) x + (\frac{15}{8}) x^2 + o(x^3)	\label{eqn:Taylor_M32}
+	\eea
+
+	\bea
+		\vec{a}_{g} &=& - \frac{k}{\norm{\vec{r}}^3} \vec{r}	\nn	\\
+		&=& - k (\vec{r}^2)^{-\frac{3}{2}} \vec{r}	\nn	\\
+		&=& - \frac{k}{r_0^3} (1 + \frac{(\vec{r_0}+\vec{\Delta r})^2-\vec{r_0}^2}{\vec{r_0}^2})^{-\frac{3}{2}} (\vec{r_0} + \vec{\Delta r})	\nn	\\
+		&=& - \frac{k}{r_0^3} (1 + \frac{2 \vec{r_0} \cdot \vec{\Delta r} + (\vec{\Delta r})^2}{\vec{r_0}^2})^{-\frac{3}{2}} (\vec{r_0} + \vec{\Delta r})	\nn	\\
+		&=& - \frac{k}{r_0^3} (1 - \frac{3 \vec{r_0} \cdot \vec{\Delta r}}{\vec{r_0}^2} + \frac{15 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 \vec{r_0}^4} - \frac{3 (\vec{\Delta r})^2}{2 (\vec{r_0})^2}) (\vec{r_0} + \vec{\Delta r})	\label{eqn:a_g}
+	\eea
+
+	\bea
+		\vec{a}_{e} &=& - \frac{k}{r_0^3} \vec{r_0}	\nn	\\
+		\vec{a}_{Tide} &=& \vec{a}_{g} - \vec{a}_{e}	\nn	\\
+		&=& o((\vec{\Delta r})^3) - \frac{k}{r_0^3} (\vec{\Delta r} - \frac{3 \vec{r_0} \cdot \vec{\Delta r}}{\vec{r_0}^2} \vec{r_0})	\nn	\\
+		&-& \frac{k}{r_0^3} ( \frac{15 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 \vec{r_0}^4} - \frac{3 (\vec{\Delta r})^2}{2 (\vec{r_0})^2}) \vec{r_0} - \frac{k}{r_0^3} (- \frac{3 \vec{r_0} \cdot \vec{\Delta r}}{\vec{r_0}^2}) \vec{\Delta r}	\nn	\\
+		&=& \vec{a}_{Tide}^{1} + \vec{a}_{Tide}^{2} + o((\vec{\Delta r})^3)	\label{eqn:a_Tide}	\\
+		\vec{a}_{Tide}^{1} &=& - \frac{k}{r_0^3} (\vec{\Delta r}_{\perp} - 2 \vec{\Delta r}_{\parallel})	\label{eqn:a_Tide_1}
+	\eea
+
+	\bea
+		V_{g} &=& - \frac{k}{\norm{\vec{r}}}	\nn	\\
+		&=& - k (\vec{r}^2)^{-\frac{1}{2}}	\nn	\\
+		&=& - \frac{k}{r_0} (1 + \frac{(\vec{r_0}+\vec{\Delta r})^2-\vec{r_0}^2}{\vec{r_0}^2})^{-\frac{1}{2}}	\nn	\\
+		&=& - \frac{k}{r_0} (1 + \frac{2 \vec{r_0} \cdot \vec{\Delta r} + (\vec{\Delta r})^2}{\vec{r_0}^2})^{-\frac{1}{2}}	\nn	\\
+		&=& - \frac{k}{r_0} (1 - \frac{ \vec{r_0} \cdot \vec{\Delta r}}{\vec{r_0}^2} + \frac{3 (\vec{r_0} \cdot \vec{\Delta r})^2}{2 \vec{r_0}^4} - \frac{ (\vec{\Delta r})^2}{2 (\vec{r_0})^2}) + o((\vec{\Delta r})^3)	\nn	\\
+		&=& V_{0} + V_{1} + V_{2} + o((\vec{\Delta r})^3)	\label{eqn:V_g}
+	\eea
+
+\subsection{\label{sec:Coriolis}Coriolis Force}
+
+	In system with rotation $(\vec{\omega}, \vec{\beta})$ around point $O$, Non-inertial forces are
+
+	\bea
+		\vec{a}_{c} &=& -2 (\vec{\omega} \times \vec{\delta v})	\nn	\\
+		\vec{a}_{\beta} &=& - \beta \times \vec{\delta r}	\label{eqn:Coriolis}
+	\eea
