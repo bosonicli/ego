@@ -1,12 +1,16 @@
 ---
-title: "mechanics"
+title: "Agnosticism"
 author: bosonicli
-output: pdf_document
+date: \today
 mainfont: "Noto Serif CJK SC"
 bibliography: [../../ref_repository/bib/EndNote_Bohai_2021.bib]
+link-citations: true
+colorlinks: true
+links-as-notes: true
+output: pdf_document
 ---
 
-# mechanics
+# agnosticism
 
 [toc]
 
@@ -14,25 +18,135 @@ bibliography: [../../ref_repository/bib/EndNote_Bohai_2021.bib]
 
 ## fragment
 
-*	effective gravity induced by rotation of facility
+*	earth heat engine hypo
 
-	Only second-order effect is present at a perturbative level.
+	high T Sun, low T background radiation
 
-*	epicycle model
+## Gravity
 
-	Fitting Kepler orbit of binary star system to epicycle system?
+### Gravitational Wave
 
-*	space channel in gravitational fields
+*	coupling of gravitational wave?
 
-	More fictional rather than a realistic one. Few materials are found.
+	with mass / gravitational waves / black holes
 
-## Kepler
+*	curve of spacetime is nonlinear, 'gravitational wave' is just the linear asymptotic
 
-*   effective potential
+*	vaccum with nonzero cosmological constant is itself a momentum medium, it has E-P density
+
+*	it is not wierd that $ ( 1 + \lambda x^2 + \lambda y^2 )^{\frac{1}{2}} $ has a $xy$ term at first order of $\lambda$
+
+### mass myth
+
+*	'gravitational mass' in classical equations is defined through energy/force
+
+	then blocked by the fact that energy is not well defined in curved spacetime
+
+*	The only meaningful connection is through E-P tensor and Einstein equation $ S = \sqrt{-h} S_{flat} $
+
+*	asymptotically mass could be treated as source of 'gravity' $ (h - h_{flat}) $
+
+### energy of gravity system
+
+*	how much energy is released in a collapsing celestial
+
+	an extreme case is 'black hole bomb', which 'release energy' to an asymptotic flat spacetime
+
+	then blocked by the fact that energy is not well defined in curved spacetime
+
+## Black Hole
+
+### Black Hole Geometry
+
+*	Black hole has no volume
+
+	It has only area, just like the line on the tennis has no area but only length
+
+	decuction: all mass of black hole is stored on surface --- surface information hypo --- holographic universe hypo
+
+*	Killing Vector
+
+	how to comprehend the time/space Killing Vector?
+
+### Black Hole as a Celestial
+
+*	Dark region is larger than the horizon
+
+### Black Hole ThermoDynamics
+
+*	Hawking Radiation
+
+	black hole evaporate V.S. Background Radiation
+
+	mass-temp relation, critical mass/size
+
+*	Does black hole has a characteristic scale? Does the Penrose CCC hypo require all black holes vaporized?
+
+*	mass of a Schwarzmann black hole is proportional to area. But black hole thermodynamics is derived from energy extration in Penrose process of Kerr black hole. What's meaningful in black hole thermodynamics $ \delta M = \frac{\kappa}{8 \pi G} \delta A + \Omega_{H} \delta J $ is surface gravity $ \kappa = \frac{\partial M}{\partial A} \propto \frac{1}{M} $
+
+*	What is mass
+
+	Irreducible mass is area sqrt $ M_{irr}^2 = \frac{A}{16 \pi G^2} $
+
+	mass is E-P tensor, E-P is invariant of spacetime invariance, but black hole is curved spacetime
+
+	is it related to 'gravity is entropy force'
+
+	is Penrose process also related to entropy / free energy
+
+## Cosmology
+
+*	Scale invariance
+
+	expression of space of light
+
+*	Penrose Conformal Cyclic Cosmology
+
+## Astronomy
+
+*	Magnetic Field
+
+	Solar wind dynamics in geomagnetic field is plasma dynamics rather than single particle one
+
+	Solar wind + solar magnetic field also blocks space rays
+
+## HydroDynamics
+
+*	Fluid Roche limit
+
+*	Waterball without gravity
+
+	ossilation?
+
+## ElectroDynamics
+
+*   action $ L = V(\phi) + J \phi $ means J is source related to energy, and from Lagrangian equation $ \partial \phi = J $ indicating J is also the field-generating source
+
+*   EM field in higher dimension
+
+	E & M field no longer dual?
+
+## Dynamics
+
+### fragment
 
 *   orbit stability
 
 	Bertland Theorem
+
+*	sunshine duration
+
+*	effective gravity induced by rotation of facility
+
+	Only second-order effect is present at a perturbative level
+
+*	epicycle model
+
+	Fitting Kepler orbit of binary celestial system to epicycle system?
+
+*	space channel in gravitational fields
+
+	More fictional rather than a realistic one. Few materials are found
 
 *   Hydrogen and $SO(4)$ symmetry
 
@@ -42,9 +156,7 @@ bibliography: [../../ref_repository/bib/EndNote_Bohai_2021.bib]
 
 	Time evolution operators classically (failed)
 
-## asymptotic
-
-### tidal force
+### Tidal Force
 
 $$
 \begin{aligned}
@@ -101,23 +213,11 @@ $$
 \tag{aRot}
 $$
 
-## thermal/hydro
-
-*	Fluid Roche limit
-
-	To be continued.
-
-*	Waterball without gravity
-
-	ossilation?
-
-## scenarios
-
-### wander around space station
+### Space Colony
 
 Space station $O$ is orbiting $\vec{r}:(r,\theta)$ around the earth and an astronaut is wandering around $O$ with displacement $\vec{\Delta r}$ in non-rotating system and $\vec{\delta r}$ in rorating system.
 
-Dynamic in the rotating system is described in \eqref{eqn:a_delta}
+Dynamic in the rotating system is described as
 
 $$
 \begin{aligned}
@@ -127,12 +227,11 @@ $$
 \vec{a}_{\beta} &= \ddot{\theta} (\delta r_{\theta} \hat{r} - \delta r_{r} \hat{\theta})
 \end{aligned}
 \tag{aDelta}
-\label{eqn:a_delta}
 $$
 
 Assume $O$ is orbiting on a circle $(\dot{\theta}, \ddot{\theta}) = (\omega,0)$, we have $\omega = \frac{k}{r_0^3}$, 
 
-then \eqref{eqn:a_delta} is simplified as \eqref{eqn:a_circle}
+then the above equations are simplified as
 
 $$
 \begin{aligned}
@@ -140,7 +239,6 @@ $$
 &= -\omega^2 (- 2 \delta r_{r} \hat{r} + \delta r_{\theta} \hat{\theta} ) + 2 \omega (\dot{\delta r_{\theta}} \hat{r} - \dot{\delta r_{r}} \hat{\theta})
 \end{aligned}
 \tag{aCircle}
-\label{eqn:a_circle}
 $$
 
 Qualitative analysis of the dynamics: Assume the astronaut orbits around the space station with $\dot{\delta \theta} < 0$ and a period same as the space station orbit $T_0$
@@ -153,7 +251,7 @@ Qualitative analysis of the dynamics: Assume the astronaut orbits around the spa
 
 *	Quantitave description of the orbit dynamic remains mystery;
 
-### Lagrangian points
+### Lagrangian Points
 
 We consider the effective dynamics in a Non-inertial system of two-body gravity system.
 
