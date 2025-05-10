@@ -5,8 +5,11 @@ dependencies:
   - python=3.9
   - numpy
   - matplotlib
+  - typing
   - pip
   - pip:
+    - Ipython
+    - jupyter
+    - ipykernel
     - ipywidgets
     - jupyterlab
-    
