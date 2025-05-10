@@ -1,14 +1,15 @@
 name: binder-env
 channels:
   - conda-forge
+  - defaults
 dependencies:
-  - python=3.9
+  - python=3.11
   - numpy
   - matplotlib
   - typing
-  - fonts-wqy-zenhei  # 文泉驿正黑
-  - fonts-wqy-microhei # 文泉驿微米黑
-  - noto-fonts-sc      # Google Noto Sans CJK SC
+  - fontconfig  # 必需的系统字体配置工具
+  - fonts-conda-ecosystem  # 包含基础字体
+  - fonts-conda-forge  # conda-forge的字体集合
   - pip
   - pip:
     - Ipython
