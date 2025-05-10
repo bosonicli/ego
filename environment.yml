@@ -6,7 +6,9 @@ dependencies:
   - numpy
   - matplotlib
   - typing
-  - platform
+  - fonts-wqy-zenhei  # 文泉驿正黑
+  - fonts-wqy-microhei # 文泉驿微米黑
+  - noto-fonts-sc      # Google Noto Sans CJK SC
   - pip
   - pip:
     - Ipython
