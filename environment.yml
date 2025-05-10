@@ -10,6 +10,8 @@ dependencies:
   - fontconfig  # 必需的系统字体配置工具
   - fonts-conda-ecosystem  # 包含基础字体
   - fonts-conda-forge  # conda-forge的字体集合
+  - fonts-noto-cjk  # 明确安装Noto中日韩字体
+  - fonts-noto-sans # 补充无衬线字体
   - pip
   - pip:
     - Ipython
